@@ -1,7 +1,7 @@
 import cv2
 
-face_cascade = cv2.CascadeClassifier('C:\\Users\\Guru_Ji\\Computer_Vision_A_Z\\Module 1 - Face Recognition\\Module_1_Face_Recognition\\haarcascade_frontalface_default.xml') # We load the cascade for the face.
-eye_cascade = cv2.CascadeClassifier('C:\\Users\\Guru_Ji\\Computer_Vision_A_Z\\Module 1 - Face Recognition\\Module_1_Face_Recognition\\haarcascade_eye.xml') # We load the cascade for the eyes.
+face_cascade = cv2.CascadeClassifier('C:\\Users\\Face_Recognition\\haarcascade_frontalface_default.xml') # We load the cascade for the face.
+eye_cascade = cv2.CascadeClassifier('C:\\Users\\Face_Recognition\\haarcascade_eye.xml') # We load the cascade for the eyes.
 
 def detect(gray, frame):
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
